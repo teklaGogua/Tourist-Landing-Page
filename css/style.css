@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 600;
+  background-color: #fff;
+  
+  height: 8.1rem;
+  padding: 0 9.498rem;
+}
+
+.logo {
+  height: 3.097rem;
+}
+
+/* NAVIGATION */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+  line-height: 3.7rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.574rem;
+  text-transform: uppercase;
+  color: #303134;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #6d6e75;
+}
