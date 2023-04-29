@@ -25,7 +25,7 @@ body {
 
   font-weight: 600;
   background-color: #fff;
-  
+
   height: 8.1rem;
   padding: 0 9.498rem;
 }
@@ -40,7 +40,7 @@ body {
   display: flex;
   align-items: center;
   gap: 4.8rem;
-  line-height: 3.7rem;
+  line-height: 37px;
 }
 
 .main-nav-link:link,
@@ -55,4 +55,88 @@ body {
 .main-nav-link:hover,
 .main-nav-link:active {
   color: #6d6e75;
+}
+
+/* HOME PAGE */
+.section-home {
+  background-image: linear-gradient(
+      to right,
+      rgba(8, 174, 234, 0.5),
+      rgba(42, 245, 154, 0.5)
+    ),
+    url("../img/Background_imgs/home.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.home-text-box {
+  text-align: center;
+  padding: 20rem 0;
+}
+
+.heading-primary {
+  font-size: 7.8rem;
+  color: #fff;
+  font-weight: normal;
+  font-family: 'inter';
+}
+
+.home-description {
+  line-height: 37px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home-pricing-box {
+  position: relative;
+}
+
+.pricing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: #006CD1;
+  line-height: 37px;
+  font-size: 2.1rem;
+  font-family: 'raleway';
+  font-weight: bold;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  width: 33px;
+  height: 33px;
+}
+
+.btn--left, .btn--right {
+  position: absolute;
+}
+
+.btn--left {
+  left: 95px;
+}
+
+.btn--right {
+  right: 95px;
+}
+
+.icon {
+  width: 14px;
+  height: 12px;
 }
