@@ -210,6 +210,10 @@ figure img:hover {
 /* ******************************* */
 /* FEATURES SECTION */
 /* ******************************* */
+.section-features {
+  border-bottom: 1px solid rgba(178, 171, 171, 0.899);
+}
+
 .video-box {
   background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
     url("../img/Background_imgs/features.png");
@@ -248,3 +252,27 @@ figure img:hover {
   transform: translate(-50%, -50%);
 }
 
+.featured-in-box{
+  display: flex;
+  justify-content: space-around;
+  padding: 6.4rem 4.8rem;
+}
+
+.featured-in{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #1A1A1B;
+}
+
+.featured-in img{
+  margin-bottom: 1.5rem;
+}
+
+.number{
+  font-size: 3.2rem;
+  font-weight: bold;
+  font-family: 'lato';
+  line-height: 1.7;
+}
