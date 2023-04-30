@@ -10,13 +10,37 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1;
   font-weight: 600;
   color: #555;
 }
 
+.heading-primary {
+  font-size: 7.8rem;
+  color: #fff;
+  font-weight: normal;
+  font-family: "inter";
+}
+
+.heading-secondary {
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+.third-heading {
+  line-height: 2.2;
+  font-size: 1.8rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+/* ******************************* */
 /* HEADER */
+/* ******************************* */
 .header {
   display: flex;
   justify-content: space-between;
@@ -33,7 +57,9 @@ body {
   height: 3.097rem;
 }
 
+/* ******************************* */
 /* NAVIGATION */
+/* ******************************* */
 .main-nav-list {
   list-style: none;
   display: flex;
@@ -56,7 +82,9 @@ body {
   color: #6d6e75;
 }
 
+/* ******************************* */
 /* HOME PAGE */
+/* ******************************* */
 .section-home {
   background-image: linear-gradient(
       to right,
@@ -80,13 +108,6 @@ body {
   padding: 20rem 0;
 }
 
-.heading-primary {
-  font-size: 7.8rem;
-  color: #fff;
-  font-weight: normal;
-  font-family: 'inter';
-}
-
 .home-description {
   line-height: 3.7;
   font-size: 1.8rem;
@@ -104,7 +125,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  color: #006CD1;
+  color: #006cd1;
   line-height: 3.7;
   font-size: 2.1rem;
   font-weight: bold;
@@ -121,7 +142,8 @@ body {
   height: 33px;
 }
 
-.btn--left, .btn--right {
+.btn--left,
+.btn--right {
   position: absolute;
   top: 55%;
 }
@@ -139,37 +161,21 @@ body {
   height: 12px;
 }
 
+/* ******************************* */
 /* DETAILS PAGE*/
+/* ******************************* */
 .section-details {
   padding: 9.6rem 4rem;
   display: flex;
   gap: 4rem;
+  color: #1a1a1b;
 }
 
-.details-description {
-  
-}
-
-.subheading {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  color: #8D8D8D;
-}
-
-.heading-secondary {
-  color: #1A1A1B;
-  font-size: 2.6rem;
-  line-height: 1.5;
-}
-
-.third-heading{
-  color: #1A1A1B;
-  line-height: 2.2;
-  font-size: 1.8rem;
+.section-details p {
+  color: #8d8d8d;
 }
 
 .description-text {
-  color: #8D8D8D;
   font-size: 1.6rem;
   line-height: 2.2;
 }
@@ -187,12 +193,12 @@ body {
 figure {
   overflow: hidden;
   width: 100%;
-  height: 70%;
+  height: 55%;
 }
 
 figure img {
   display: block;
-  width: 100%; 
+  width: 100%;
   height: 100%;
   transition: all 0.3s;
 }
@@ -200,3 +206,45 @@ figure img {
 figure img:hover {
   transform: scale(1.1);
 }
+
+/* ******************************* */
+/* FEATURES SECTION */
+/* ******************************* */
+.video-box {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../img/Background_imgs/features.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.video-text {
+  padding: 4rem 4rem;
+}
+
+.section-features .shape {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 46px;
+}
+
+.video {
+  position: relative;
+}
+
+.features-video {
+  width: 70rem;
+  border-bottom: 4px solid #4B54FA;
+}
+
+.btn--play {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
