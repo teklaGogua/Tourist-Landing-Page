@@ -315,6 +315,7 @@ figure img:hover {
   overflow: hidden;
   transition: all 0.4s;
   max-height: 36rem;
+  position: relative;
 }
 
 .package-box img {
@@ -345,4 +346,17 @@ figure img:hover {
   color: #4B54FA;
   font-family: 'Raleway';
   font-weight: 500;
+}
+
+.tag-box {
+  position: absolute;
+  background-color: #FED701;
+  padding: 1rem;
+  top: 1rem;
+  left: 1rem;
+}
+
+.tag-text {
+  color: #1A1A1B;
+  font-size: 1.4rem;
 }
