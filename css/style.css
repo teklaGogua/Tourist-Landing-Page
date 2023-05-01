@@ -138,12 +138,12 @@ body {
   border: none;
   cursor: pointer;
   font-family: inherit;
-  width: 33px;
-  height: 33px;
 }
 
 .btn--left,
 .btn--right {
+  width: 33px;
+  height: 33px;
   position: absolute;
   top: 55%;
 }
@@ -219,6 +219,7 @@ body {
     url("../img/Background_imgs/features.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   color: #fff;
   text-align: center;
   line-height: 1.5;
@@ -370,6 +371,7 @@ body {
     url("../img/Background_imgs/subscribe.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 
   display: flex;
   justify-content: center;
@@ -440,11 +442,8 @@ body {
 /* ******************************* */
 /* TESTIMONIALS SECTION */
 /* ******************************* */
-.section-testimonials {
-  padding: 9.6rem 9.6rem;
-}
-
 .testimonials-space {
+  padding: 9.6rem 9.6rem 0 9.6rem;
 }
 
 .testimonials-heading {
@@ -492,8 +491,50 @@ body {
 }
 
 .testimonials-text {
-  color: #1A1A1B;
+  color: #1a1a1b;
   line-height: 2.2;
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+.subscribe-space {
+  background-image: url("../img/Background_imgs/subscribe02.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50rem;
+  position: relative;
+}
+
+.sub-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.text-sub {
+  font-size: 3.6rem;
+  color: #fff;
+  line-height: 3.7;
+}
+
+.btn--sub {
+  color: #fff;
+  font-size: 1.6rem;
+  background: linear-gradient(90deg, rgba(8, 174, 234, 0.8), transparent)
+    rgba(42, 245, 154, 0.8);
+  padding: 2rem 4rem;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn--sub:hover,
+.btn--sub:focus {
+  background-color: rgba(42, 245, 242, 0.2);
+  box-shadow: 0rem 0rem 1rem #fff;
 }
