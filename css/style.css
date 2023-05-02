@@ -38,6 +38,13 @@ body {
   font-size: 1.6rem;
 }
 
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ******************************* */
 /* HEADER */
 /* ******************************* */
@@ -446,13 +453,6 @@ body {
   padding: 9.6rem 9.6rem 0 9.6rem;
 }
 
-.testimonials-heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -538,3 +538,92 @@ body {
   background-color: rgba(42, 245, 242, 0.2);
   box-shadow: 0rem 0rem 1rem #fff;
 }
+
+/* ******************************* */
+/* CARD SECTION */
+/* ******************************* */
+.section-cards {
+  padding: 9.6rem 6.4rem;
+}
+
+.cards {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4rem;
+}
+
+.cards-box {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  overflow: hidden;
+  max-height: 36rem;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.8) 70%
+  );
+  transition: all 0.3s;
+}
+
+.cards-box:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.cards-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cards-img img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.cards-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  padding: 2rem;
+  color: #fef;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cards-text {
+  font-size: 3rem;
+  line-height: 1.7;
+}
+
+.cards-price {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.btn-cards {
+  display: flex;
+  padding: 1.5rem 1.5rem;
+  border-radius: 50%;
+  background: linear-gradient(90deg, rgb(8, 174, 234), transparent)
+    rgb(42, 245, 154);
+    transition: all 0.3s;
+}
+
+.btn-cards:hover,
+.btn-cards:focus {
+  background-color: rgba(42, 245, 242, 0.5);
+}
+
+.btn-cards img {
+  align-self: center;
+  justify-self: center;
+}
+
+
