@@ -12,6 +12,15 @@
       rel="stylesheet"
     />
 
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Tourism Landing Page</title>
@@ -257,7 +266,7 @@
         <div class="subscribe">
           <h2 class="subscribe-title">Get 10% on Your Next</h2>
           <p class="subscribe-text">Maximum doscout 1000$ per person</p>
-          <form class="subscribe-form" name="sign-up" netlify>
+          <form class="subscribe-form" name="sign-up">
             <div>
               <input
                 id="email"
@@ -420,7 +429,71 @@
           </div>
         </div>
       </section>
+      <section class="section-map"></section>
     </main>
-    <footer></footer>
+
+    <footer class="footer">
+      <div class="main-footer">
+        <nav class="nav-col">
+          <p class="footer-heading">Quick Links</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Home</a></li>
+            <li><a class="footer-link" href="#">About Company</a></li>
+            <li><a class="footer-link" href="#">Testimonials</a></li>
+            <li><a class="footer-link" href="#">Infrastructure</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Support</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Get Started</a></li>
+            <li><a class="footer-link" href="#">Lorem</a></li>
+            <li><a class="footer-link" href="#">Help</a></li>
+            <li><a class="footer-link" href="#">Ipsum</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-col">
+          <p class="footer-heading">Address</p>
+          <address class="footer-nav">
+            <ul class="footer-nav">
+              <li>
+                <a class="footer-link" href="#"
+                  >Address14, 1 Ellis bridge ST,</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="#"> auckland 3500, Australia</a>
+              </li>
+              <li>
+                <a class="footer-link" href="tel:+1234567890"> +1234567890</a>
+              </li>
+              <li>
+                <a class="footer-link" href="mailto:contactus@demo.com"
+                  >contactus@demo.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </nav>
+        <form class="footer-form">
+          <label for="email">Subscribe to our newsletter</label>
+          <div class="input-full">
+            <input
+              id="email_0"
+              type="email"
+              placeholder="Your email"
+              name="email"
+              required
+            />
+            <button class="btn btn-form">
+              <ion-icon name="albums-outline" class="form-icon"></ion-icon>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="additional-footer">
+        <p class="additional-txt">trourism&copyAll Rights Reserved</p>
+      </div>
+    </footer>
   </body>
 </html>

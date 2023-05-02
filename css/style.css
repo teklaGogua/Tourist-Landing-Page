@@ -613,7 +613,7 @@ body {
   border-radius: 50%;
   background: linear-gradient(90deg, rgb(8, 174, 234), transparent)
     rgb(42, 245, 154);
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn-cards:hover,
@@ -626,4 +626,111 @@ body {
   justify-self: center;
 }
 
+/* ******************************* */
+/* FOOTER */
+/* ******************************* */
+.footer {
+  background-color: #141418;
+}
 
+.main-footer {
+  padding: 4rem 6.4rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3rem;
+}
+
+.footer-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #dcdbdb;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+  font-weight: 500;
+}
+
+.footer-form {
+  grid-column: 4/6;
+  margin-left: 20%;
+  font-family: "roboto";
+}
+
+.footer-form label {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.footer-form input {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #141418;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.footer-form input::placeholder {
+  color: #353030;
+}
+
+.input-full {
+  position: relative;
+}
+
+.btn-form {
+  display: flex;
+  padding: 0.94rem;
+  border-radius: 0 5px 5px 0;
+  background: linear-gradient(90deg, rgb(8, 174, 234), transparent)
+    rgb(42, 245, 154);
+  transition: all 0.3s;
+  position: absolute;
+  right: 0%;
+}
+
+.btn-form:hover,
+.btn-form:focus {
+  background-color: rgba(42, 245, 242, 0.5);
+}
+
+.form-icon {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.additional-footer {
+  border-top: #e8e8e8 solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.additional-txt {
+  font-size: 2rem;
+  color: #dcdbdb;
+}
