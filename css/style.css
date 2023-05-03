@@ -92,22 +92,16 @@ body {
 /* ******************************* */
 /* HOME PAGE */
 /* ******************************* */
-.section-home {
-  background-image: linear-gradient(
-      to bottom right,
-      rgba(42, 245, 154, 0.7),
-      rgba(8, 174, 234, 0.7)
-    ),
-    url("../img/Background_imgs/home.png");
-  background-size: cover;
-  background-position: center;
-}
-
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(42, 245, 154, 0.7),
+    rgba(8, 174, 234, 0.7)
+  );
 }
 
 .home-text-box {
