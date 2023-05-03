@@ -5,6 +5,9 @@ const carousel = document.querySelector(".section-home");
 const btnLeft = document.querySelector(".btn--left");
 const btnRight = document.querySelector(".btn--right");
 
+const btnPlay = document.querySelector(".btn--play");
+const media = document.querySelector(".features-video");
+
 // Variables
 let count = 0;
 let arr = [
@@ -20,7 +23,7 @@ let maxVal = arr.length - 1;
 // CAROUSEL FOR HOME PAGE
 function btnFun(max = 0, min = 0, val = 0) {
   // Function works for both "left" and "right" arrows
-  // If there is no next element in array (count equals to max), 
+  // If there is no next element in array (count equals to max),
   // Function goes back to min value, val is counter steps
   if (count === max) {
     count = min;
@@ -37,4 +40,14 @@ btnRight.addEventListener("click", function () {
 
 btnLeft.addEventListener("click", function () {
   btnFun(0, maxVal, -1);
+});
+
+///////////////////////////////////////////////////////////
+// VIDEO CONTROLS
+btnPlay.addEventListener("click", function () {
+  if (media.paused) {
+    media.play();
+    media.setAttribute("controls", "controls");
+    btnPlay.style.display = "none";
+  }
 });
