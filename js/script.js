@@ -11,11 +11,11 @@ const media = document.querySelector(".features-video");
 // Variables
 let count = 0;
 let arr = [
-  "../img/Background_imgs/home00.png",
-  "../img/Background_imgs/home01.png",
-  "../img/Background_imgs/home02.png",
-  "../img/Background_imgs/home03.png",
-  "../img/Background_imgs/home04.png",
+  "img/Background_imgs/home00.png",
+  "img/Background_imgs/home01.png",
+  "img/Background_imgs/home02.png",
+  "img/Background_imgs/home03.png",
+  "img/Background_imgs/home04.png",
 ];
 let maxVal = arr.length - 1;
 
@@ -51,3 +51,4 @@ btnPlay.addEventListener("click", function () {
     btnPlay.style.display = "none";
   }
 });
+
