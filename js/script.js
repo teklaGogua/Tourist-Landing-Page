@@ -1,19 +1,28 @@
 "use strict";
 
-// Selectors
+// SELECTORS
+// For Home Page
 const carousel = document.querySelector(".section-home");
 const btnLeft = document.querySelector(".btn--left");
 const btnRight = document.querySelector(".btn--right");
 
+// For Features Section
 const btnPlay = document.querySelector(".btn--play");
 const media = document.querySelector(".features-video");
 
+// For Details Section
 const services = document.querySelectorAll(".services--box");
 const title = document.querySelectorAll(".third-heading");
 const description = document.querySelectorAll(".description-text");
 const img = document.querySelectorAll(".services-img");
 
-// Variables
+let modal = document.getElementById("myModal");
+let modalImg = document.getElementById("img01");
+let captionText = document.getElementById("caption");
+let captionHeader = document.getElementById("caption-header");
+let span = document.getElementsByClassName("close")[0];
+
+// VARIABLES
 let count = 0;
 let arr = [
   "img/Background_imgs/home00.png",
@@ -102,7 +111,19 @@ for (let i = 0; i < services.length; i++) {
   title[i].textContent = data[i].title;
   description[i + 1].textContent = data[i].description; // Adding 1 bc there is one more element with description class
   img[i].src = data[i].img;
+
+  services[i].onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = data[i].img;
+    captionHeader.innerHTML = data[i].title;
+    captionText.innerHTML = data[i].description;
+  };
 }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
 
 ///////////////////////////////////////////////////////////
 // SETTING MAP

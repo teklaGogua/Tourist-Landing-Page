@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0.8rem rgba(8, 174, 234, 0.7);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  color: #555;
+}
+
+.heading-primary {
+  font-size: 7.8rem;
+  color: #fff;
+  font-weight: normal;
+  font-family: "inter";
+}
+
+.heading-secondary {
+  font-size: 2.6rem;
+  line-height: 1.5;
+}
+
+.third-heading {
+  line-height: 2.2;
+  font-size: 1.8rem;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
