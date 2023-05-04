@@ -13,6 +13,20 @@
     />
     <link rel="shortcut icon" href="#" />
 
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -21,8 +35,6 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
-
-    <link rel="stylesheet" href="css/style.css" />
 
     <title>Tourism Landing Page</title>
   </head>
@@ -120,27 +132,17 @@
           </div>
           <div class="services--box">
             <figure>
-              <img
-                src=""
-                alt="Crouse tour on big ship"
-                class="services-img"
-              />
+              <img src="" alt="Crouse tour on big ship" class="services-img" />
             </figure>
             <h3 class="third-heading"></h3>
-            <p class="description-text">
-            </p>
+            <p class="description-text"></p>
           </div>
           <div class="services--box">
             <figure>
-              <img
-                src=""
-                alt="Fire camp in the woods"
-                class="services-img"
-              />
+              <img src="" alt="Fire camp in the woods" class="services-img" />
             </figure>
             <h3 class="third-heading"></h3>
-            <p class="description-text">
-            </p>
+            <p class="description-text"></p>
           </div>
           <div class="services--box">
             <figure>
@@ -151,8 +153,7 @@
               />
             </figure>
             <h3 class="third-heading"></h3>
-            <p class="description-text">
-            </p>
+            <p class="description-text"></p>
           </div>
         </div>
       </section>
@@ -423,7 +424,7 @@
           </div>
         </div>
       </section>
-      <section class="section-map"></section>
+      <section class="section-map" id="map" style="height: 50vh"></section>
     </main>
 
     <footer class="footer">
