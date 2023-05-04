@@ -8,6 +8,11 @@ const btnRight = document.querySelector(".btn--right");
 const btnPlay = document.querySelector(".btn--play");
 const media = document.querySelector(".features-video");
 
+const services = document.querySelectorAll(".services--box");
+const title = document.querySelectorAll(".third-heading");
+const description = document.querySelectorAll(".description-text");
+const img = document.querySelectorAll(".services-img");
+
 // Variables
 let count = 0;
 let arr = [
@@ -52,3 +57,50 @@ btnPlay.addEventListener("click", function () {
   }
 });
 
+///////////////////////////////////////////////////////////
+// SERVICES SECTION DATA
+const data = {
+  0: {
+    title: "Flight booking",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+    img: "img/services_imgs/flight_booking.png",
+  },
+  1: {
+    title: "Hotel & resort booking",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+    img: "img/services_imgs/hotel_resort_booking.png",
+  },
+  2: {
+    title: "Family Trip Planner",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+    img: "img/services_imgs/family_trip_planner.png",
+  },
+  3: {
+    title: "Cruise Tour",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+    img: "img/services_imgs/cruise_tour.png",
+  },
+  4: {
+    title: "Fire Camp",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+    img: "img/services_imgs/fire_camp.png",
+  },
+  5: {
+    title: "Corporate Holidays",
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard",
+    img: "img/services_imgs/corporate_holidays.png",
+  },
+};
+
+for (let i = 0; i < services.length; i++) {
+  title[i].textContent = data[i].title;
+  description[i + 1].textContent = data[i].description; // Adding 1 bc there is one more element with description class
+  img[i].src = data[i].img;
+  console.log(description[i]);
+}
