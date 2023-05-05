@@ -113,11 +113,11 @@ const data = {
 
 for (let i = 0; i < services.length; i++) {
   title[i].textContent = data[i].title;
-  description[i].textContent = data[i].description; 
+  description[i].textContent = data[i].description;
   img[i].src = data[i].img;
 
   services[i].onclick = function () {
-    modal.style.display = "block";
+    modal.style.display = "flex";
     modalImg.src = data[i].img;
     captionHeader.innerHTML = data[i].title;
     captionText.innerHTML = data[i].description;
