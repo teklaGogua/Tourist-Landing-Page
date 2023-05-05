@@ -26,6 +26,7 @@ let span = document.getElementsByClassName("close")[0];
 const btnNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
 
+const sectionHome = document.querySelector(".section-home");
 // VARIABLES
 let count = 0;
 let arr = [
@@ -145,3 +146,24 @@ sfo_marker.bindPopup("<b>Tourism Office</b>");
 btnNav.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
+
+///////////////////////////////////////////////////////////
+// STICKY NAVIGATION
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent.isIntersecting) document.body.classList.add("sticky");
+    if (ent.isIntersecting) document.body.classList.remove("sticky");
+  },
+  {
+    // In the viewport
+    root: null,
+
+    // Complately moves out of viewport
+    threshold: 0,
+
+    // Adds additional pixels
+    rootMargin: "-80px",
+  }
+);
+obs.observe(sectionHome);
