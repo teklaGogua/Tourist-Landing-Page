@@ -22,6 +22,10 @@ let captionText = document.getElementById("caption");
 let captionHeader = document.getElementById("caption-header");
 let span = document.getElementsByClassName("close")[0];
 
+// For Navigation
+const btnNav = document.querySelector(".btn-mobile-nav");
+const header = document.querySelector(".header");
+
 // VARIABLES
 let count = 0;
 let arr = [
@@ -109,7 +113,7 @@ const data = {
 
 for (let i = 0; i < services.length; i++) {
   title[i].textContent = data[i].title;
-  description[i + 1].textContent = data[i].description; // Adding 1 bc there is one more element with description class
+  description[i].textContent = data[i].description; 
   img[i].src = data[i].img;
 
   services[i].onclick = function () {
@@ -135,3 +139,9 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
 
 let sfo_marker = L.marker([43.075, -89.4172]).addTo(myMap);
 sfo_marker.bindPopup("<b>Tourism Office</b>");
+
+///////////////////////////////////////////////////////////
+// MOBILE NAVIGATION
+btnNav.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});

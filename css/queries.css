@@ -1,0 +1,264 @@
+/* ******************************* */
+/* BELOW 1200px (Landscape Tablets) */
+/* ******************************* */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .description-text {
+    line-height: 1;
+  }
+
+  .packages-plan {
+    padding: 9.6rem 14rem;
+  }
+
+  .cards-text {
+    font-size: 2rem;
+  }
+}
+
+/* ******************************* */
+/* BELOW 944px (Tablets) */
+/* ******************************* */
+@media (max-width: 59em) {
+  /* Header */
+  .header {
+    padding: 0 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 2.4rem;
+  }
+  
+  /* Details Section */
+  .section-details {
+    display: inline-block;
+  }
+
+  .details-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description-txt {
+    text-align: center;
+    margin: 1rem 10rem 4.4rem 10rem;
+  }
+
+  .section-details,
+  .packages-plan {
+    padding: 4.8rem 2rem;
+  }
+  
+  /* Features Section */
+  .featured-in-box {
+    padding: 4.8rem 0;
+  }
+
+  .featured-in img {
+    margin-bottom: 0;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .number {
+    font-size: 2.4rem;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-space {
+    padding: 6.4rem 2rem 0 2rem;
+  }
+
+  .testimonials-text {
+    line-height: 1;
+  }
+  
+  /* Cards Section */
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ******************************* */
+/* BELOW 768px (Smaller Tablets) */
+/* ******************************* */
+@media (max-width: 48em) {
+  html {
+    font-size: 50%;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999;
+  }
+
+  .main-nav {
+    background-color: rgba(8, 174, 234, 0.1);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    z-index: 99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /* ARROWS OF HOME PAGE */
+  .btn--left {
+    left: 4%;
+  }
+  .btn--right {
+    right: 4%;
+  }
+
+  /* TESTIMONIALS SECTIONS SECOND HEADING */
+  .text-sub {
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  /* FOOTER MOBILE/SMALLER TABLET DESIGN */
+  .main-footer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+
+  .footer-form {
+    grid-column: auto;
+    margin-left: 0;
+  }
+}
+
+/* ******************************* */
+/* BELOW 592px (Mobiles) */
+/* ******************************* */
+@media (max-width: 37em) {
+  /* Testimonials Section */
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .testimonials-box {
+    max-width: 50rem;
+  }
+
+  /* Services Section */
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .description-txt {
+    margin: 1rem;
+  }
+
+  .description-text {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
+
+  .third-heading {
+    margin-bottom: 1rem;
+    line-height: 1;
+  }
+
+  /* Features Box */
+  .featured-in img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .number {
+    font-size: 1.8rem;
+  }
+
+  .fixed-size {
+    font-size: 1rem;
+  }
+
+  /* Packages Section */
+  .packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 3rem;
+  }
+
+  .package-box {
+    width: 30rem;
+  }
+
+  .package-box img {
+    max-height: 20rem;
+  }
+  
+  /* Cards Section */
+  .section-cards {
+    padding: 4.8rem 2.4rem;
+  }
+
+  /* Other Details (buttons, inputs, videos) */
+  .subscribe-form {
+    flex-direction: column;
+    margin: 2.4rem 1rem 4.8rem 1rem;
+    gap: 2rem
+  }
+
+  .subscribe-form input {
+    min-width: 30rem;
+  }
+
+  .btn--left,
+  .btn--right {
+    top: 60%;
+  }
+
+  .features-video {
+    width: 100%;
+  }
+}
