@@ -15,6 +15,7 @@
 
 - Solution URL: https://github.com/teklaGogua/Tourist-Landing-Page/
 - Live Site URL: https://teklagogua.github.io/Tourist-Landing-Page/
+- Live Site URL (Netlify): https://omnifood-tekla.netlify.app/
 
 ## My process
 
